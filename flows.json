@@ -1,0 +1,2008 @@
+[
+    {
+        "id": "6611c76c82a2a337",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3c748901d03b38b7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#f02328",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#f02328",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#f02328",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#f56b6e",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#f02328",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7ea09240ca4b381c",
+        "type": "ui_group",
+        "name": "jog",
+        "tab": "82fe7a242bd4a0f0",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ce08a0fd68eafe85",
+        "type": "serial-port",
+        "serialport": "COM9",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "82fe7a242bd4a0f0",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "619e5b68e62f0cd0",
+        "type": "ui_group",
+        "name": "Reactivos",
+        "tab": "82fe7a242bd4a0f0",
+        "order": 2,
+        "disp": true,
+        "width": 24,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "675b435e4d4ba943",
+        "type": "ui_spacer",
+        "z": "6611c76c82a2a337",
+        "name": "spacer",
+        "group": "7ea09240ca4b381c",
+        "order": 1,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "7af5cdf5e239a97d",
+        "type": "ui_spacer",
+        "z": "6611c76c82a2a337",
+        "name": "spacer",
+        "group": "7ea09240ca4b381c",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "02aa65387d3ef95a",
+        "type": "ui_spacer",
+        "z": "6611c76c82a2a337",
+        "name": "spacer",
+        "group": "7ea09240ca4b381c",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c88ca054bc8008df",
+        "type": "ui_spacer",
+        "z": "6611c76c82a2a337",
+        "name": "spacer",
+        "group": "7ea09240ca4b381c",
+        "order": 10,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "1fa2b45cd7141759",
+        "type": "ui_spacer",
+        "z": "6611c76c82a2a337",
+        "name": "spacer",
+        "group": "7ea09240ca4b381c",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "150c52fe22c5e965",
+        "type": "ui_spacer",
+        "z": "6611c76c82a2a337",
+        "name": "spacer",
+        "group": "7ea09240ca4b381c",
+        "order": 17,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5d2b191f44f47b88",
+        "type": "ui_spacer",
+        "z": "6611c76c82a2a337",
+        "name": "spacer",
+        "group": "7ea09240ca4b381c",
+        "order": 18,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "6d43509933180d21",
+        "type": "ui_spacer",
+        "z": "6611c76c82a2a337",
+        "name": "spacer",
+        "group": "7ea09240ca4b381c",
+        "order": 21,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "50bd68ed384c1ece",
+        "type": "inject",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 100,
+        "wires": [
+            [
+                "d9dd1f07b296be81"
+            ]
+        ]
+    },
+    {
+        "id": "d9dd1f07b296be81",
+        "type": "debug",
+        "z": "6611c76c82a2a337",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "76c1df23963c66e8",
+        "type": "ui_text_input",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "label": ">>",
+        "tooltip": "",
+        "group": "7ea09240ca4b381c",
+        "order": 16,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "e43b05417f1d27d7",
+                "d9dd1f07b296be81"
+            ]
+        ]
+    },
+    {
+        "id": "14fc525ddb179fe0",
+        "type": "ui_text",
+        "z": "6611c76c82a2a337",
+        "group": "7ea09240ca4b381c",
+        "order": 19,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "CNC",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 490,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "2aeb9b0e7b10a2ef",
+        "type": "serial in",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "serial": "ce08a0fd68eafe85",
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "14fc525ddb179fe0",
+                "ba239d88741bc970"
+            ]
+        ]
+    },
+    {
+        "id": "e43b05417f1d27d7",
+        "type": "serial out",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "serial": "ce08a0fd68eafe85",
+        "x": 610,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "ea072a55c2e55c49",
+        "type": "inject",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "\"$22=0\\n\"",
+        "payloadType": "json",
+        "x": 660,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3781bd9435faadc",
+        "type": "inject",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "\"$X\\n\"",
+        "payloadType": "json",
+        "x": 150,
+        "y": 200,
+        "wires": [
+            [
+                "76c1df23963c66e8"
+            ]
+        ]
+    },
+    {
+        "id": "630325c06c6efa6b",
+        "type": "ui_button",
+        "z": "6611c76c82a2a337",
+        "name": "up",
+        "group": "7ea09240ca4b381c",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "keyboard_arrow_up",
+        "payload": "\"$J=G21G91Y10F500\\n\"",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "e43b05417f1d27d7",
+                "d9dd1f07b296be81"
+            ]
+        ]
+    },
+    {
+        "id": "b3b458abf40170ea",
+        "type": "ui_button",
+        "z": "6611c76c82a2a337",
+        "name": "down",
+        "group": "7ea09240ca4b381c",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "keyboard_arrow_down",
+        "payload": "\"$J=G21G91Y-10F500\\n\"",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 320,
+        "wires": [
+            [
+                "e43b05417f1d27d7",
+                "d9dd1f07b296be81"
+            ]
+        ]
+    },
+    {
+        "id": "bd0e92cfd6c700f7",
+        "type": "ui_button",
+        "z": "6611c76c82a2a337",
+        "name": "left",
+        "group": "7ea09240ca4b381c",
+        "order": 5,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "keyboard_arrow_left",
+        "payload": "\"$J=G21G91X-10F500\\n\"",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "e43b05417f1d27d7",
+                "d9dd1f07b296be81"
+            ]
+        ]
+    },
+    {
+        "id": "c40a9fe5b3cb2e3e",
+        "type": "ui_button",
+        "z": "6611c76c82a2a337",
+        "name": "right",
+        "group": "7ea09240ca4b381c",
+        "order": 7,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "keyboard_arrow_right",
+        "payload": "\"$J=G21G91X10F500\\n\"",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 400,
+        "wires": [
+            [
+                "e43b05417f1d27d7",
+                "d9dd1f07b296be81"
+            ]
+        ]
+    },
+    {
+        "id": "08b851386fa6cfdf",
+        "type": "ui_button",
+        "z": "6611c76c82a2a337",
+        "name": "stop",
+        "group": "7ea09240ca4b381c",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "stop",
+        "payload": "!",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 440,
+        "wires": [
+            [
+                "d9dd1f07b296be81",
+                "e43b05417f1d27d7",
+                "6c4aa729b7318071"
+            ]
+        ]
+    },
+    {
+        "id": "e74acbd52398d187",
+        "type": "rpi-gpio in",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "pin": "4",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 90,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b40774d935ef3e91",
+        "type": "rpi-gpio in",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "pin": "17",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 90,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37ec70937bed02a4",
+        "type": "ui_digital_clock",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "group": "7ea09240ca4b381c",
+        "order": 4,
+        "width": 6,
+        "height": 2,
+        "x": 850,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "105daf8d29a83f81",
+        "type": "inject",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 650,
+        "y": 480,
+        "wires": [
+            [
+                "37ec70937bed02a4"
+            ]
+        ]
+    },
+    {
+        "id": "c5db1e72.3ef58",
+        "type": "ui_template",
+        "z": "6611c76c82a2a337",
+        "group": "7ea09240ca4b381c",
+        "name": "Virtual Keyboard",
+        "order": 20,
+        "width": 6,
+        "height": 1,
+        "format": "<div id=\"empty\"></div>\n<button class=\"VK\">V-KeyBoard On</button>\n\n<!-- The Modal -->\n<div id=\"myModal\" class=\"modal\">\n\n  <!-- Modal content -->\n  <div class=\"modal-content\">\n      <div class=\"modal-header\">\n      <span class=\"close\" onclick=\"closeModal()\">&times;</span>\n      <h2 id=\"vkeyname\" style=\"background-color: aliceblue !important; color: black !important; text-align: center; min-height: 30px;\">V-Keyboard</h2>\n    </div>\n    <div class=\"modal-body\">\n        <div id=\"keyboard\"></div>\n        <div>\n        </div>\n    </div>\n  </div>\n</div>\n\n<style>\n.VK{\n    position: fixed;\n    top: 60px;\n    right: 20px;\n    height: 30px;\n}\n</style>\n\n<script>\n\nvar clickState = 1;\nvar btn = document.querySelector('.VK');\n\nbtn.addEventListener('click', function(){\n\n  if (clickState == 0) {\n    this.textContent = 'V-KeyBoard On';\n    modal = document.getElementById('myModal');\n    clickState = 1;\n  } else {\n    this.textContent = 'V-KeyBoard Off';\n    modal = document.getElementById('empty');\n    clickState = 0;\n  }\n\n});\n</script>\n\n<script>\n    // Get the modal\nvar modal = document.getElementById('myModal');\nvar inputTags;\nvar inputType;\nvar inputTarget;\n\nvar getinputs = function() {\n    inputTags = document.getElementsByTagName(\"input\");\n    console.log(inputTags)\n    for (var i = 0; i < inputTags.length; i++) {\n        inputTags[i].addEventListener('click', openModal, false)\n    }\n}\n\nsetTimeout(function(){ getinputs(); }, 1000);\n\nvar openModal = function() {\n    inputType = event.target.type\n    inputTarget = event.target\n    var layoutName;\n    if (inputType == \"number\"){\n        //inputTarget.type = \"number\" //hack because chrome doesn't allow setselection in number inputs\n        //inputTarget.value = \"\"\n        layoutName = \"numbers_only\"\n    }else{\n        layoutName = \"english\"\n    }\n    $('#vkeyname').text(event.target.value)\n    $('#keyboard').unbind().removeData();\n    modal.style.display = \"block\";\n    $('#keyboard').jkeyboard({\n        layout: layoutName,\n        input: $('#'+$(this).attr('id'))\n    });\n}\n\n\n// Get the <span> element that closes the modal\nvar span = document.getElementsByClassName(\"close\")[0];\n\n// When the user clicks anywhere outside of the modal, close it\nwindow.onclick = function(event) {\n    var source = event.target;\n    if (source == modal || source == span) {\n        closeModal(source)\n    }\n};\n\nvar closeModal = function(source){\n    //console.log(\"closing\")\n    modal.style.display = \"none\";\n   \n    if (inputType == \"number\"){\n        inputTarget.type = \"number\" //hack because chrome doesn't allow selectionstart on number inputs\n    }\n}\n\n    \n// the semi-colon before function invocation is a safety net against concatenated\n// scripts and/or other plugins which may not be closed properly.\n; (function ($, window, document, undefined) {\n\n    // undefined is used here as the undefined global variable in ECMAScript 3 is\n    // mutable (ie. it can be changed by someone else). undefined isn't really being\n    // passed in so we can ensure the value of it is truly undefined. In ES5, undefined\n    // can no longer be modified.\n\n    // window and document are passed through as local variable rather than global\n    // as this (slightly) quickens the resolution process and can be more efficiently\n    // minified (especially when both are regularly referenced in your plugin).\n\n    // Create the defaults once\n    var pluginName = \"jkeyboard\",\n        defaults = {\n            layout: \"english\",\n            input: $('#input'),\n            customLayouts: {\n                selectable: []\n            },\n        };\n\n\n    var function_keys = {\n        backspace: {\n            text: 'DEL',\n        },\n        return: {\n            text: 'Enter'\n        },\n        shift: {\n            text: 'Shift'\n        },\n        space: {\n            text: 'Space'\n        },\n        numeric_switch: {\n            text: '123',\n            command: function () {\n                this.createKeyboard('numeric');\n                this.events();\n            }\n        },\n        layout_switch: {\n            text: '<i class=\"fa fa-keyboard-o\" aria-hidden=\"true\"></i>',\n            command: function () {\n                var l = this.toggleLayout();\n                this.createKeyboard(l);\n                this.events();\n            }\n        },\n        character_switch: {\n            text: 'ABC',\n            command: function () {\n                this.createKeyboard(layout);\n                this.events();\n            }\n        },\n        symbol_switch: {\n            text: '#+=',\n            command: function () {\n                this.createKeyboard('symbolic');\n                this.events();\n            }\n        }\n    };\n\n\n    var layouts = {\n        selectable: ['english', 'russian','french', 'emoji'],\n        english: [\n            ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',],\n            ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l',],\n            ['shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'backspace'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],\n        russian: [\n            ['й', 'ц', 'у', 'к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х'],\n            ['ф', 'ы', 'в', 'а', 'п', 'р', 'о', 'л', 'д', 'ж', 'э'],\n            ['shift', 'я', 'ч', 'с', 'м', 'и', 'т', 'ь', 'б', 'ю', 'backspace'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],\n        french: [\n            ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',],\n            ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l','à','ç'],\n            ['shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm','é','è', 'backspace'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],\n        emoji: [\n            ['😀', '😁', '😂', '🤣', '😃', '😄', '😅', '😆', '😉', '😊',],\n            ['😋', '😎', '😍', '😘', '❤️', '🙏', '🔥', '✨', '👍','👌','💯'],\n            ['🤷', '🎉', '👏', '🤦', '🙌', '🎶', '💥', '🌈','✅','⭐', '👀'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],            \n        numeric: [\n            ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],\n            ['-', '/', ':', ';', '(', ')', '$', '&', '@', '\"'],\n            ['symbol_switch', '.', ',', '?', '!', \"'\", 'backspace'],\n            ['character_switch', 'layout_switch', 'space', 'return'],\n        ],\n        numbers_only: [\n            ['1', '2', '3',],\n            ['4', '5', '6',],\n            ['7', '8', '9',],\n            ['0', 'backspace', 'return'],\n        ],\n        symbolic: [\n            ['[', ']', '{', '}', '#', '%', '^', '*', '+', '='],\n            ['_', '\\\\', '|', '~', '<', '>'],\n            ['numeric_switch', '.', ',', '?', '!', \"'\", 'backspace'],\n            ['character_switch', 'layout_switch', 'space', 'return'],\n\n        ]\n    }\n\n    var shift = false, capslock = false, layout = 'english', layout_id = 0;\n\n    // The actual plugin constructor\n    function Plugin(element, options) {\n        this.element = element;\n        // jQuery has an extend method which merges the contents of two or\n        // more objects, storing the result in the first object. The first object\n        // is generally empty as we don't want to alter the default options for\n        // future instances of the plugin\n        this.settings = $.extend({}, defaults, options);\n        // Extend & Merge the cusom layouts\n        layouts = $.extend(true, {}, this.settings.customLayouts, layouts);\n        if (Array.isArray(this.settings.customLayouts.selectable)) {\n            $.merge(layouts.selectable, this.settings.customLayouts.selectable);\n        }\n        this._defaults = defaults;\n        this._name = pluginName;\n        this.init();\n    }\n\n    Plugin.prototype = {\n        init: function () {\n            layout = this.settings.layout;\n            this.createKeyboard(layout);\n            this.events();\n        },\n\n        setInput: function (newInputField) {\n            this.settings.input = newInputField;\n        },\n\n        createKeyboard: function (layout) {\n            shift = false;\n            capslock = false;\n\n            var keyboard_container = $('<ul/>').addClass('jkeyboard'),\n                me = this;\n\n            layouts[layout].forEach(function (line, index) {\n                var line_container = $('<li/>').addClass('jline');\n                line_container.append(me.createLine(line));\n                keyboard_container.append(line_container);\n            });\n\n            $(this.element).html('').append(keyboard_container);\n        },\n\n        createLine: function (line) {\n            var line_container = $('<ul/>');\n\n            line.forEach(function (key, index) {\n                var key_container = $('<li/>').addClass('jkey').data('command', key);\n\n                if (function_keys[key]) {\n                    key_container.addClass(key).html(function_keys[key].text);\n                }\n                else {\n                    key_container.addClass('letter').html(key);\n                }\n\n                line_container.append(key_container);\n            })\n\n            return line_container;\n        },\n\n        events: function () {\n            var letters = $(this.element).find('.letter'),\n                shift_key = $(this.element).find('.shift'),\n                space_key = $(this.element).find('.space'),\n                backspace_key = $(this.element).find('.backspace'),\n                return_key = $(this.element).find('.return'),\n\n                me = this,\n                fkeys = Object.keys(function_keys).map(function (k) {\n                    return '.' + k;\n                }).join(',');\n\n            letters.on('click', function () {\n                me.type((shift || capslock) ? $(this).text().toUpperCase() : $(this).text());\n            });\n\n            space_key.on('click', function () {\n                me.type(' ');\n            });\n\n            return_key.on('click', function () {\n                me.enter();\n            });\n\n            backspace_key.on('click', function () {\n                me.backspace();\n            });\n\n            shift_key.on('click', function () {\n                if (capslock) {\n                    me.toggleShiftOff();\n                    capslock = false;\n                } else {\n                    me.toggleShiftOn();\n                }\n            }).on('dblclick', function () {\n                capslock = true;\n            });\n\n\n            $(fkeys).on('click', function () {\n                var command = function_keys[$(this).data('command')].command;\n                if (!command) return;\n\n                command.call(me);\n            });\n        },\n\n        type: function (key) {\n            var input = this.settings.input,\n                val = input.val(),\n                input_node = input.get(0),\n                start = input_node.selectionStart,\n                end = input_node.selectionEnd;\n\n            var max_length = $(input).attr(\"maxlength\");\n            if (start == end && end == val.length) {\n                if (!max_length || val.length < max_length) {\n                    input.val(val + key);\n                    input.change()\n                    $('#vkeyname').text(val + key)\n                }\n            } else {\n                if (input_node.type == \"text\"){\n                    var new_string = this.insertToString(start, end, val, key);\n                    input.val(new_string);\n                    start++;\n                    end = start;\n                    input_node.setSelectionRange(start, end);\n                    input.change()\n                }else if (input_node.type == \"number\"){\n                    input.val(val + key);\n                }else{\n                    input.val(val + key);\n                    input.change()\n                }\n                $('#vkeyname').text(val + key)\n                \n            }\n            input.trigger('focus');\n\n            if (shift && !capslock) {\n                this.toggleShiftOff();\n            }\n        },\n        \n        enter: function () {\n            var input = this.settings.input,\n                val = input.val();\n                input_node = input.get(0),\n                start = input_node.selectionStart,\n                end = input_node.selectionEnd;\n            if (input_node.type == \"text\"){\n                val = val + \"\\n\";\n                $('#vkeyname').text(val)\n            }\n            input.change()\n            input.focus()\n            if (input_node.type == \"number\"){\n                modal.style.display = \"none\";\n            }\n        },\n\n        backspace: function () {\n            var input = this.settings.input,\n                val = input.val();\n                input_node = input.get(0),\n                start = input_node.selectionStart,\n                end = input_node.selectionEnd;\n            if (input.type == \"text\"){\n                input.val(val.slice(0, start-1) + val.slice(start))\n                input_node.setSelectionRange(start-1, start-1);\n                //console.log(val)\n                $('#vkeyname').text(val)\n            }else{\n                input.val(val.slice(0,-1))\n                $('#vkeyname').text(val.slice(0,-1))\n            }\n            //input.change()\n            //input.focus()\n        },\n\n        toggleShiftOn: function () {\n            var letters = $(this.element).find('.letter'),\n                shift_key = $(this.element).find('.shift');\n\n            letters.addClass('uppercase');\n            shift_key.addClass('active')\n            shift = true;\n        },\n\n        toggleShiftOff: function () {\n            var letters = $(this.element).find('.letter'),\n                shift_key = $(this.element).find('.shift');\n\n            letters.removeClass('uppercase');\n            shift_key.removeClass('active');\n            shift = false;\n        },\n\n        toggleLayout: function () {\n            layout_id = layout_id || 0;\n            var plain_layouts = layouts.selectable;\n            layout_id++;\n\n            var current_id = layout_id % plain_layouts.length;\n            var SelectedLayoutName = plain_layouts[current_id];\n            $('#vkeyname').text('V-Keyboard ' + SelectedLayoutName )\n            return plain_layouts[current_id];\n        },\n\n        insertToString: function (start, end, string, insert_string) {\n            return string.substring(0, start) + insert_string + string.substring(end, string.length);\n        }\n    };\n\n        /*\n\t\t// A really lightweight plugin wrapper around the constructor,\n\t\t// preventing against multiple instantiations\n\t\t$.fn[ pluginName ] = function ( options ) {\n\t\t\t\treturn this.each(function() {\n\t\t\t\t\t\tif ( !$.data( this, \"plugin_\" + pluginName ) ) {\n\t\t\t\t\t\t\t\t$.data( this, \"plugin_\" + pluginName, new Plugin( this, options ) );\n\t\t\t\t\t\t}\n\t\t\t\t});\n\t\t};\n        */\n        var methods = {\n            init: function(options) {\n                if (!this.data(\"plugin_\" + pluginName)) {\n                    this.data(\"plugin_\" + pluginName, new Plugin(this, options));\n                }\n            },\n\t\t\tsetInput: function(content) {\n\t\t\t\tthis.data(\"plugin_\" + pluginName).setInput($(content));\n            },\n            setLayout: function(layoutname) {\n                // change layout if it is not match current\n                object = this.data(\"plugin_\" + pluginName);\n                if (typeof(layouts[layoutname]) !== 'undefined' && object.settings.layout != layoutname) {\n                    object.settings.layout = layoutname;\n                    object.createKeyboard(layoutname);\n                    object.events();\n                };\n            },\n        };\n\n\t\t$.fn[pluginName] = function (methodOrOptions) {\n            if (methods[methodOrOptions]) {\n                return methods[methodOrOptions].apply(this.first(), Array.prototype.slice.call( arguments, 1));\n            } else if (typeof methodOrOptions === 'object' || ! methodOrOptions) {\n                // Default to \"init\"\n                return methods.init.apply(this.first(), arguments);\n            } else {\n                $.error('Method ' +  methodOrOptions + ' does not exist on jQuery.tooltip');\n            }\n        };\n\n})(jQuery, window, document);\n</script>\n\n<style>\nbody {font-family: Arial, Helvetica, sans-serif;}\n\n.nr-dashboard-theme .nr-dashboard-template .md-button:not(:first-of-type) {\n    margin-top: 0px;\n}\n\n/* The Modal (background) */\n.modal {\n    display: none; /* Hidden by default */\n    position: fixed; /* Stay in place */\n    opacity:0.99;\n    z-index: 100; /* Sit on top */\n    left: 0;\n    top: 0;\n    width: 100%; /* Full width */\n    height: 100%; /* Full height */\n    overflow: auto; /* Enable scroll if needed */\n    background-color: rgb(0,0,0); /* Fallback color */\n    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\n}\n\n/* Modal Content */\n.modal-content {\n    position: fixed;\n    background-color: #fefefe;\n    margin: auto;\n    padding: 0;\n    bottom: 0%;\n    left: 50%;\n    transform: translate(-50%, 0%);\n    border: 1px solid #888;\n    width: fit-content;\n    max-width: 100%;\n    max-height: 100%;\n    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);\n    -webkit-animation-name: animate;\n    -webkit-animation-duration: 0.4s;\n    animation-name: animate;\n    animation-duration: 0.4s\n}\n\n/* Add Animation */\n@-webkit-keyframes animate {\n    from {bottom:100%; opacity:0} \n    to {bottom:0%; opacity:1}\n}\n\n@keyframes animate {\n    from {bottom:100%; opacity:0}\n    to {bottom:0%; opacity:1}\n}\n\n/* The Close Button */\n.close {\n    color: black;\n    float: right;\n    font-size: 28px;\n    font-weight: bold;\n}\n\n.close:hover,\n.close:focus {\n    color: #000;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n.modal-header {\n    padding: 2px 16px;\n    background-color: aliceblue;\n    color: white;\n}\n\n.modal-body {padding: 2px 16px;}\n\n.modal-footer {\n    padding: 2px 16px;\n    background-color: #5cb85c;\n    color: white;\n}\n\n.jkeyboard {\n  display: inline-block;\n}\n.jkeyboard, .jkeyboard .jline, .jkeyboard .jline ul {\n  display: block;\n  margin: 0;\n  padding: 0;\n}\n.jkeyboard .jline {\n  text-align: center;\n  margin-left: -14px;\n}\n.jkeyboard .jline ul li {\n  font-family: arial, sans-serif;\n  font-size: 20px;\n  display: inline-block;\n  border: 1px solid #468db3;\n  -webkit-box-shadow: 0 0 3px #468db3;\n  -webkit-box-shadow: inset 0 0 3px #468db3;\n  margin: 5px 0 1px 6px;\n  color: #000000;\n  border-radius: 5px;\n  width: 52px;\n  height: 52px;\n  box-sizing: border-box;\n  text-align: center;\n  line-height: 52px;\n  overflow: hidden;\n  cursor: pointer;\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -khtml-user-select: none;\n  -moz-user-select: -moz-none;\n  -ms-user-select: none;\n  user-select: none;\n}\n.jkeyboard .jline ul li.uppercase {\n  text-transform: uppercase;\n}\n.jkeyboard .jline ul li:hover, .jkeyboard .jline ul li:active {\n  background-color: #185a82;\n}\n.jkeyboard .jline .return {\n  width: 80px;\n}\n.jkeyboard .jline .space {\n  width: 366px;\n}\n.jkeyboard .jline .numeric_switch {\n  width: 65px;\n}\n.jkeyboard .jline .layout_switch {\n}\n.jkeyboard .jline .shift {\n  width: 60px;\n}\n.jkeyboard .jline .backspace {\n  width: 69px;\n}\n</style>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 840,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73f1c80975a40b0b",
+        "type": "ui_text_input",
+        "z": "6611c76c82a2a337",
+        "name": "h1",
+        "label": "horas",
+        "tooltip": "",
+        "group": "619e5b68e62f0cd0",
+        "order": 7,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "0",
+        "sendOnBlur": false,
+        "className": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 640,
+        "wires": [
+            [
+                "b241a3c57802e02d"
+            ]
+        ]
+    },
+    {
+        "id": "6a5f040f17eb832b",
+        "type": "ui_text_input",
+        "z": "6611c76c82a2a337",
+        "name": "m1",
+        "label": "minutos",
+        "tooltip": "",
+        "group": "619e5b68e62f0cd0",
+        "order": 8,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "0",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 680,
+        "wires": [
+            [
+                "2bd69b033bc00e2a"
+            ]
+        ]
+    },
+    {
+        "id": "a961d8c7c4b266f8",
+        "type": "ui_text",
+        "z": "6611c76c82a2a337",
+        "group": "619e5b68e62f0cd0",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Reactivo 1",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 330,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "dfe9f24dc0a88f72",
+        "type": "ui_text_input",
+        "z": "6611c76c82a2a337",
+        "name": "h2",
+        "label": "horas",
+        "tooltip": "",
+        "group": "619e5b68e62f0cd0",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "1",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 780,
+        "wires": [
+            [
+                "6f4f8f339bd9ab87"
+            ]
+        ]
+    },
+    {
+        "id": "d2b82ecc72bdf408",
+        "type": "ui_text_input",
+        "z": "6611c76c82a2a337",
+        "name": "m2",
+        "label": "minutos",
+        "tooltip": "",
+        "group": "619e5b68e62f0cd0",
+        "order": 10,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "1",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 820,
+        "wires": [
+            [
+                "a3281eb75698ffb7"
+            ]
+        ]
+    },
+    {
+        "id": "0c100643e60ba2b8",
+        "type": "ui_text",
+        "z": "6611c76c82a2a337",
+        "group": "619e5b68e62f0cd0",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Reactivo 2",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 330,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "89895991b5f64741",
+        "type": "ui_text_input",
+        "z": "6611c76c82a2a337",
+        "name": "h3",
+        "label": "horas",
+        "tooltip": "",
+        "group": "619e5b68e62f0cd0",
+        "order": 11,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "2",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 920,
+        "wires": [
+            [
+                "05f36e8d4719af55"
+            ]
+        ]
+    },
+    {
+        "id": "a222035e92070863",
+        "type": "ui_text_input",
+        "z": "6611c76c82a2a337",
+        "name": "m3",
+        "label": "minutos",
+        "tooltip": "",
+        "group": "619e5b68e62f0cd0",
+        "order": 12,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "2",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 960,
+        "wires": [
+            [
+                "db577ce3439efaac"
+            ]
+        ]
+    },
+    {
+        "id": "b1135ed013dc6fce",
+        "type": "ui_text",
+        "z": "6611c76c82a2a337",
+        "group": "619e5b68e62f0cd0",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Reactivo 3",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 330,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "86e67843521edad1",
+        "type": "ui_text_input",
+        "z": "6611c76c82a2a337",
+        "name": "h4",
+        "label": "horas",
+        "tooltip": "",
+        "group": "619e5b68e62f0cd0",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "3",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 1060,
+        "wires": [
+            [
+                "9f688a6151f3029b"
+            ]
+        ]
+    },
+    {
+        "id": "27ae3a9d8ce5ce06",
+        "type": "ui_text_input",
+        "z": "6611c76c82a2a337",
+        "name": "m4",
+        "label": "mimutos",
+        "tooltip": "",
+        "group": "619e5b68e62f0cd0",
+        "order": 14,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "3",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 1100,
+        "wires": [
+            [
+                "5fb1f54612c082c1"
+            ]
+        ]
+    },
+    {
+        "id": "e1308305dcbcd07f",
+        "type": "ui_text",
+        "z": "6611c76c82a2a337",
+        "group": "619e5b68e62f0cd0",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Reactivo 4",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 330,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "0dca631c1f6105a1",
+        "type": "ui_text_input",
+        "z": "6611c76c82a2a337",
+        "name": "h5",
+        "label": "horas",
+        "tooltip": "",
+        "group": "619e5b68e62f0cd0",
+        "order": 15,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "4",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 1200,
+        "wires": [
+            [
+                "329cdbce101abd28"
+            ]
+        ]
+    },
+    {
+        "id": "be49e457fa652865",
+        "type": "ui_text_input",
+        "z": "6611c76c82a2a337",
+        "name": "m5",
+        "label": "minutos",
+        "tooltip": "",
+        "group": "619e5b68e62f0cd0",
+        "order": 16,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "4",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 1240,
+        "wires": [
+            [
+                "354cd24039c84e55"
+            ]
+        ]
+    },
+    {
+        "id": "531bc9d0d8fbd40a",
+        "type": "ui_text",
+        "z": "6611c76c82a2a337",
+        "group": "619e5b68e62f0cd0",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Reactivo 5",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 330,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "5d6bed049bef14a9",
+        "type": "ui_text_input",
+        "z": "6611c76c82a2a337",
+        "name": "h6",
+        "label": "horas",
+        "tooltip": "",
+        "group": "619e5b68e62f0cd0",
+        "order": 17,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "5",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 1340,
+        "wires": [
+            [
+                "3f81b99810cab587"
+            ]
+        ]
+    },
+    {
+        "id": "1bb881edb712bd6a",
+        "type": "ui_text_input",
+        "z": "6611c76c82a2a337",
+        "name": "m6",
+        "label": "minutos",
+        "tooltip": "",
+        "group": "619e5b68e62f0cd0",
+        "order": 18,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "5",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 310,
+        "y": 1380,
+        "wires": [
+            [
+                "2e95e907413790d0"
+            ]
+        ]
+    },
+    {
+        "id": "e9ab7fba5db85263",
+        "type": "ui_text",
+        "z": "6611c76c82a2a337",
+        "group": "619e5b68e62f0cd0",
+        "order": 6,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Reactivo 6",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 330,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "a4cac3fe917924e2",
+        "type": "ui_button",
+        "z": "6611c76c82a2a337",
+        "name": "home",
+        "group": "7ea09240ca4b381c",
+        "order": 11,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "home",
+        "payload": "\"$H\\n\"",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "e43b05417f1d27d7"
+            ]
+        ]
+    },
+    {
+        "id": "2e6d2746d2bda65c",
+        "type": "ui_button",
+        "z": "6611c76c82a2a337",
+        "name": "reset",
+        "group": "7ea09240ca4b381c",
+        "order": 12,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "autorenew",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 640,
+        "wires": [
+            [
+                "73f1c80975a40b0b",
+                "6a5f040f17eb832b",
+                "dfe9f24dc0a88f72",
+                "d2b82ecc72bdf408",
+                "89895991b5f64741",
+                "a222035e92070863",
+                "86e67843521edad1",
+                "27ae3a9d8ce5ce06",
+                "0dca631c1f6105a1",
+                "be49e457fa652865",
+                "5d6bed049bef14a9",
+                "1bb881edb712bd6a"
+            ]
+        ]
+    },
+    {
+        "id": "dfa91a3a3ca3dc9e",
+        "type": "function",
+        "z": "6611c76c82a2a337",
+        "name": "calc. min. totales",
+        "func": "// Función que calcula los minutos totales de los reactivos\n\n// Primero guardar valor de play\n// para saber que ya inició el ciclo\nflow.set(\"play\", true);\n// iniciar con el primer reactivo (zero)\nflow.set(\"num_reactivo\", 0);\n\n// Crear un array de los minutos totales para cada reactivo\nlet mt = [0, 0, 0, 0, 0, 0];\n// leer arrays\nlet h = flow.get(\"horas\");\nlet m = flow.get(\"minutos\");\n\n// Convertir horas a minutos y sumar a minutos totales\nfor (let i = 0; i < 6; i++) {\n    if (isNaN(h[i])) h[i] = 0;\n    if (isNaN(m[i])) m[i] = 0;\n    // sumar horas y minutos de cada reactivo\n    mt[i] = h[i]*60 + m[i];\n}\n\n// guardar valores calculados en variable del flujo\nflow.set(\"minutos_totales\", mt);\n//msg.payload = mt;\nreturn {payload:0}; //fin\n//return minutos_totales;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 800,
+        "wires": [
+            [
+                "db3018c212d38963"
+            ]
+        ]
+    },
+    {
+        "id": "dfaece900382fb3c",
+        "type": "change",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "horas",
+                "pt": "flow",
+                "to": "[0, 0, 0, 0, 0, 0]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cfaabda0b856685d",
+        "type": "debug",
+        "z": "6611c76c82a2a337",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "a7217821422eab34",
+        "type": "inject",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 750,
+        "y": 100,
+        "wires": [
+            [
+                "dfaece900382fb3c",
+                "69cbc1b443ece195",
+                "1382d886de1ce5b3",
+                "84dc9f0a2f258465",
+                "076e8655c24d98e9",
+                "e1b13fdcecd7bf16",
+                "fceedb750a797ff6"
+            ]
+        ]
+    },
+    {
+        "id": "69cbc1b443ece195",
+        "type": "change",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "minutos",
+                "pt": "flow",
+                "to": "[0, 0, 0, 0, 0, 0]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe358a2749ab9c7e",
+        "type": "change",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "horas[msg.topic]",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 640,
+        "wires": [
+            [
+                "cfaabda0b856685d"
+            ]
+        ]
+    },
+    {
+        "id": "66fd4ea41df55a07",
+        "type": "ui_button",
+        "z": "6611c76c82a2a337",
+        "name": "play",
+        "group": "7ea09240ca4b381c",
+        "order": 14,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "play_circle_fill",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 730,
+        "y": 800,
+        "wires": [
+            [
+                "ef6a3d1d12051354",
+                "a57e141567117e5c"
+            ]
+        ]
+    },
+    {
+        "id": "a7dba4a1e5ef034c",
+        "type": "ui_button",
+        "z": "6611c76c82a2a337",
+        "name": "save",
+        "group": "7ea09240ca4b381c",
+        "order": 15,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "save",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 790,
+        "y": 580,
+        "wires": [
+            [
+                "cfaabda0b856685d"
+            ]
+        ]
+    },
+    {
+        "id": "1d6cf47002aa93ac",
+        "type": "comment",
+        "z": "6611c76c82a2a337",
+        "name": "Cuando inicia el flujo inicializar muchsa variables",
+        "info": "",
+        "x": 860,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "8cb5e7c23180261e",
+        "type": "change",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "minutos[msg.topic]",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 680,
+        "wires": [
+            [
+                "cfaabda0b856685d"
+            ]
+        ]
+    },
+    {
+        "id": "cba5623057923f99",
+        "type": "comment",
+        "z": "6611c76c82a2a337",
+        "name": "Controles jog",
+        "info": "",
+        "x": 330,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "797ca531ad427669",
+        "type": "link in",
+        "z": "6611c76c82a2a337",
+        "name": "link in 1",
+        "links": [
+            "b241a3c57802e02d",
+            "3aa3c0359473e544",
+            "6f4f8f339bd9ab87",
+            "05f36e8d4719af55",
+            "9f688a6151f3029b",
+            "329cdbce101abd28",
+            "3f81b99810cab587"
+        ],
+        "x": 575,
+        "y": 640,
+        "wires": [
+            [
+                "fe358a2749ab9c7e"
+            ]
+        ]
+    },
+    {
+        "id": "b241a3c57802e02d",
+        "type": "link out",
+        "z": "6611c76c82a2a337",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "797ca531ad427669"
+        ],
+        "x": 415,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "2bd69b033bc00e2a",
+        "type": "link out",
+        "z": "6611c76c82a2a337",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "c820276d77c5cc9d"
+        ],
+        "x": 415,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "c820276d77c5cc9d",
+        "type": "link in",
+        "z": "6611c76c82a2a337",
+        "name": "link in 2",
+        "links": [
+            "2bd69b033bc00e2a",
+            "a3281eb75698ffb7",
+            "db577ce3439efaac",
+            "5fb1f54612c082c1",
+            "354cd24039c84e55",
+            "2e95e907413790d0"
+        ],
+        "x": 575,
+        "y": 680,
+        "wires": [
+            [
+                "8cb5e7c23180261e"
+            ]
+        ]
+    },
+    {
+        "id": "6f4f8f339bd9ab87",
+        "type": "link out",
+        "z": "6611c76c82a2a337",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "797ca531ad427669"
+        ],
+        "x": 405,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "a3281eb75698ffb7",
+        "type": "link out",
+        "z": "6611c76c82a2a337",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "c820276d77c5cc9d"
+        ],
+        "x": 405,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "05f36e8d4719af55",
+        "type": "link out",
+        "z": "6611c76c82a2a337",
+        "name": "link out 5",
+        "mode": "link",
+        "links": [
+            "797ca531ad427669"
+        ],
+        "x": 405,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "db577ce3439efaac",
+        "type": "link out",
+        "z": "6611c76c82a2a337",
+        "name": "link out 6",
+        "mode": "link",
+        "links": [
+            "c820276d77c5cc9d"
+        ],
+        "x": 405,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "9f688a6151f3029b",
+        "type": "link out",
+        "z": "6611c76c82a2a337",
+        "name": "link out 7",
+        "mode": "link",
+        "links": [
+            "797ca531ad427669"
+        ],
+        "x": 405,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "5fb1f54612c082c1",
+        "type": "link out",
+        "z": "6611c76c82a2a337",
+        "name": "link out 8",
+        "mode": "link",
+        "links": [
+            "c820276d77c5cc9d"
+        ],
+        "x": 405,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "329cdbce101abd28",
+        "type": "link out",
+        "z": "6611c76c82a2a337",
+        "name": "link out 9",
+        "mode": "link",
+        "links": [
+            "797ca531ad427669"
+        ],
+        "x": 405,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "354cd24039c84e55",
+        "type": "link out",
+        "z": "6611c76c82a2a337",
+        "name": "link out 10",
+        "mode": "link",
+        "links": [
+            "c820276d77c5cc9d"
+        ],
+        "x": 405,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "3f81b99810cab587",
+        "type": "link out",
+        "z": "6611c76c82a2a337",
+        "name": "link out 11",
+        "mode": "link",
+        "links": [
+            "797ca531ad427669"
+        ],
+        "x": 405,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "2e95e907413790d0",
+        "type": "link out",
+        "z": "6611c76c82a2a337",
+        "name": "link out 12",
+        "mode": "link",
+        "links": [
+            "c820276d77c5cc9d"
+        ],
+        "x": 405,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "1382d886de1ce5b3",
+        "type": "change",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "num_reactivo",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "84dc9f0a2f258465",
+        "type": "change",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "play",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef6a3d1d12051354",
+        "type": "switch",
+        "z": "6611c76c82a2a337",
+        "name": "si play == false",
+        "property": "play",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 900,
+        "y": 800,
+        "wires": [
+            [
+                "dfa91a3a3ca3dc9e"
+            ]
+        ]
+    },
+    {
+        "id": "6c4aa729b7318071",
+        "type": "change",
+        "z": "6611c76c82a2a337",
+        "name": "enable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 840,
+        "wires": [
+            [
+                "66fd4ea41df55a07"
+            ]
+        ]
+    },
+    {
+        "id": "a57e141567117e5c",
+        "type": "change",
+        "z": "6611c76c82a2a337",
+        "name": "disable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 800,
+        "wires": [
+            [
+                "66fd4ea41df55a07"
+            ]
+        ]
+    },
+    {
+        "id": "076e8655c24d98e9",
+        "type": "change",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "minutos_totales",
+                "pt": "flow",
+                "to": "[0, 0, 0, 0, 0, 0]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "05f8214d7e10ea52",
+        "type": "comment",
+        "z": "6611c76c82a2a337",
+        "name": "número de reactivo",
+        "info": "",
+        "x": 1190,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f593d5e51f064686",
+        "type": "comment",
+        "z": "6611c76c82a2a337",
+        "name": "ejecutando secuencia",
+        "info": "",
+        "x": 1140,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "db3018c212d38963",
+        "type": "function",
+        "z": "6611c76c82a2a337",
+        "name": "principal",
+        "func": "// Programa principal\n// Tiene 4 salidas\n// 1. Debug (depuración)\n// 2. Gcode\n// 3. Loop o espera\n// 4. Fin del programa\n\n// Este programa revisa el número de reactivo y los minutos asignados a ese reactivo\n// Controla los movimientos de la máquina conforme a los valores de tiempo configurados\n// Este nodo tiene 3 salidas: debug, gcode y final\n\n// Obtener variable para saber en qué paso vamos\nlet paso = context.get(\"paso\") || 1;\n// obtener variable para saber en qué reactivo vamos\nlet n = flow.get(\"num_reactivo\");\n// status\nlet status = flow.get(\"status\");\n// variable z\nlet z = 0;\n\nswitch (paso) \n{\n    case 1: //paso 1\n        // Leer variables del flujo\n        let m = flow.get(\"minutos_totales\");\n        let minutos = 0; //minutos del reactivo actual\n\n        // checar numero de reactivo\n        while (n < 6) {\n            // obtener minutos para el reactivo actual\n            minutos = m[n];\n            msg.payload = \"reactivo \" + n + \": \" + minutos + \" minutos\";\n            node.send([msg, null, null, null]);\n\n            // si el valor de minutos es mayor a cero\n            if (minutos > 0) {\n                // esto inicia el movimiento a las coordenadas del recipiente\n                context.set(\"paso\", 2); //vamos al paso 2\n                msg.payload = 0;\n                return [null, null, msg, null];\n            }\n\n            // incrementar numero de reactivo\n            flow.set(\"num_reactivo\", ++n);\n        }\n        // cuando termina de revisar los reactivos, termina el programa\n        context.set(\"paso\", 8); //vamos al final\n        msg.payload = 0;\n        return [null, null, msg, null];\n        break;\n\n    case 2: //paso 2\n        // Envíar gcode para mover la máquina a las coordenadas de los recipientes\n        // array de coordenadas de los recipientes\n        const x = [-400, -400, -400, -400, -400,  -400];\n        const y = [ -10, -250, -490, -730, -970, -1210];\n\n        // gcode para mover a las coordenadas indicadas\n        msg.payload = \"G1G21G90X\" + x[n] + \"Y\" + y[n] + \"F600\\n\";\n        node.send([null, msg, null, null]);\n\n        // ahora esperar a que la máquina llegue a las coordenadas\n        context.set(\"paso\", 3); //vamos al paso 3\n        msg.payload = 0;\n        return [null, null, msg, null];\n        break;\n\n    case 3: //paso 3\n        // esperar a que la máquina llegue a las coordenadas\n        // ver valor del status\n        status = flow.get(\"status\");\n        // comparar con la palabra Idle\n        if (status == \"<Idle\") {\n            // ahora vamos a iniciar la agitación\n            context.set(\"paso\", 4); //vamos al paso 4\n            msg.payload = 0;\n            return [null, null, msg, null];\n        }\n        else {\n            msg.payload = 0;\n            return [null, null, msg, null];\n        }\n        break;\n\n    case 4: //paso 4\n        // gcode para bajar la canastilla\n        z = -85;\n        msg.payload = \"G1G21G90Z\" + z + \"F600\\n\";\n        node.send([null, msg, null, null]);\n        \n        // ahora esperar a que la canastilla baje\n        context.set(\"paso\", 5); //vamos al paso 5\n        msg.payload = 0;\n        return [null, null, msg, null];\n        break;\n\n    case 5: //paso 5\n        // esperar a que la canastilla baje\n        // ver valor del status\n        status = flow.get(\"status\");\n        // comparar con la palabra Idle\n        if (status == \"<Idle\") {\n            // ahora vamos a subir\n            context.set(\"paso\", 6); //vamos al paso 6\n            msg.payload = 0;\n            return [null, null, msg, null];\n        }\n        else {\n            msg.payload = 0;\n            return [null, null, msg, null];\n        }\n        break;\n\n    case 6: //paso 6\n        // gcode para subir la canastilla\n        z = -10;\n        msg.payload = \"G1G21G90Z\" + z + \"F600\\n\";\n        node.send([null, msg, null, null]);\n\n        // ahora esperar a que la canastilla suba\n        context.set(\"paso\", 7); //vamos al paso 7\n        msg.payload = 0;\n        return [null, null, msg, null];\n        break;\n    \n    case 7: //paso 7\n        // esperar a que la canastilla suba\n        // ver valor del status\n        status = flow.get(\"status\");\n        // comparar con la palabra Idle\n        if (status == \"<Idle\") {\n            // ahora vamos a subir\n            context.set(\"paso\", 1); //regresar\n            // incrementar numero de reactivo\n            flow.set(\"num_reactivo\", ++n);\n            msg.payload = 0;\n            return [null, null, msg, null];\n        }\n        else {\n            msg.payload = 0;\n            return [null, null, msg, null];\n        }\n        break;\n\n    case 8: //paso 8\n        // fin del programa (por ahora)\n        context.set(\"paso\", 1); //reiniciar el número de paso\n        flow.set(\"num_reactivo\", 0); //reiniciar el número de reactivo\n        msg.payload = 0;\n        return [null, null, null, msg];\n        break;\n}\n",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 800,
+        "wires": [
+            [
+                "cfaabda0b856685d"
+            ],
+            [
+                "134114d8b4bfb2d7",
+                "cfaabda0b856685d"
+            ],
+            [
+                "502a9d91af166ecd"
+            ],
+            [
+                "19224c88c1441903"
+            ]
+        ]
+    },
+    {
+        "id": "19224c88c1441903",
+        "type": "change",
+        "z": "6611c76c82a2a337",
+        "name": "play = false",
+        "rules": [
+            {
+                "t": "set",
+                "p": "play",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 900,
+        "wires": [
+            [
+                "6c4aa729b7318071"
+            ]
+        ]
+    },
+    {
+        "id": "ba239d88741bc970",
+        "type": "function",
+        "z": "6611c76c82a2a337",
+        "name": "separar_reporte",
+        "func": "// Esta función separa el reporte de status:\n// extrae el estado y las coordenadas\n\n// string\nlet s = msg.payload;\n\n// identificar si es un reporte de status\nif (s.charAt(0) == \"<\") {\n    // separar string\n    let words = s.split(\"|\")\n    // el primer elemento es el status\n    let status = words[0];\n    flow.set(\"status\", status);\n    // buscar la string que contiene las coordenadas\n    words.forEach(function(element) {\n        let inicio = element.substring(0, 4);\n        if (inicio == \"Mpos\") {\n            // separar la cadena en los \"dos puntos\"\n            s = element.split(\":\");\n            // separar la cadena en las \"comas\"\n            s = s.split(\",\");\n            // guardar array de números en una variable del flujo\n            flow.set(\"mpos\", s);\n        }\n    });\n}\n\nreturn msg;\n\n/*\nNotas\n\nforEach\nhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach\n\nsplit\nhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split\n\nget first char\nhttps://www.codingbeautydev.com/blog/javascript-get-first-character-of-string\n*/",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1b13fdcecd7bf16",
+        "type": "change",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "status",
+                "pt": "flow",
+                "to": "<Idle",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fceedb750a797ff6",
+        "type": "change",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mpos",
+                "pt": "flow",
+                "to": "[0, 0, 0]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "134114d8b4bfb2d7",
+        "type": "link out",
+        "z": "6611c76c82a2a337",
+        "name": "link out 13",
+        "mode": "link",
+        "links": [
+            "328276d6fd777177"
+        ],
+        "x": 1475,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "328276d6fd777177",
+        "type": "link in",
+        "z": "6611c76c82a2a337",
+        "name": "link in 3",
+        "links": [
+            "134114d8b4bfb2d7"
+        ],
+        "x": 535,
+        "y": 360,
+        "wires": [
+            [
+                "e43b05417f1d27d7"
+            ]
+        ]
+    },
+    {
+        "id": "9ed1c71c587b556b",
+        "type": "inject",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.3",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "?",
+        "payloadType": "str",
+        "x": 290,
+        "y": 480,
+        "wires": [
+            [
+                "e43b05417f1d27d7"
+            ]
+        ]
+    },
+    {
+        "id": "f221461e5fa2ddb8",
+        "type": "comment",
+        "z": "6611c76c82a2a337",
+        "name": "machine position",
+        "info": "",
+        "x": 1140,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "01a75df3debc685f",
+        "type": "comment",
+        "z": "6611c76c82a2a337",
+        "name": "estado de la máquina",
+        "info": "",
+        "x": 1160,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "8f9afdefcd51a863",
+        "type": "comment",
+        "z": "6611c76c82a2a337",
+        "name": "array de horas configuradas",
+        "info": "",
+        "x": 1180,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "768c0998212a5921",
+        "type": "comment",
+        "z": "6611c76c82a2a337",
+        "name": "array de minutos configurados",
+        "info": "",
+        "x": 1180,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "42c3af7859060ce7",
+        "type": "comment",
+        "z": "6611c76c82a2a337",
+        "name": "array de valores totales",
+        "info": "",
+        "x": 1220,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "502a9d91af166ecd",
+        "type": "delay",
+        "z": "6611c76c82a2a337",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1310,
+        "y": 900,
+        "wires": [
+            [
+                "db3018c212d38963"
+            ]
+        ]
+    }
+]
