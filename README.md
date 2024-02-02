@@ -36,9 +36,9 @@ Cómo instalar Node-RED en Raspberry Pi
 https://nodered.org/docs/getting-started/raspberrypi  
 
 En Node-RED se deben instalar estos módulos desde "Manage palette":
-- Dashboard - para poder crear la interfaz gráfica
-- Nodos de Raspberry Pi - para usar los GPIO
-- digital clock - para mostrar un reloj estilizado
+- Dashboard - para poder crear la interfaz gráfica https://flows.nodered.org/node/node-red-dashboard
+- Nodos de Raspberry Pi - para usar los GPIO 
+- digital clock - para mostrar un reloj estilizado https://flows.nodered.org/node/node-red-contrib-ui-digital-clock
 
 También se instaló un teclado virtual para poder escribir los valores con pantalla táctil  
 https://flows.nodered.org/flow/7fb5bc5ae66e6bc1b1c1b8e800bdef51  
@@ -58,6 +58,19 @@ https://flows.nodered.org/node/node-red-contrib-wait-paths
 
 Los ciclos de espera se pueden hacer con bucles de nodos y el nodo delay en medio de los bucles.  
 https://flowfuse.com/node-red/core-nodes/delay/  
+
+## Iniciar dashboard en pantalla completa
+Cuando la Raspberry enciende se inicia NodeRED y el navegador para mostrar el dashboard.  
+
+Primero se instaló Raspberry OS (bookworm), pero el inicio automático del navegador no funcionaba bien.  
+Este tutorial funcionó una vez, pero después ya no https://www.raspberrypi.com/tutorials/how-to-use-a-raspberry-pi-in-kiosk-mode/
+Probamos otras opciones, pero tampoco funcionaron https://raspberrytips.es/iniciar-un-programa-raspberry-pi/
+Otro tutorial https://pimylifeup.com/raspberry-pi-kiosk/
+
+Se logró el inicio automático del navegador con FullPageOS.  
+Al configurar FullPageOS es importante dejar el usuario "pi", porque usa scripts con rutas fijas dentro del sistema de archivos.  
+Editar el archivo "/boot/fullpageos.txt"
+Escribir la dirección del dashboard "http://localhost:1880/ui/"
 
 ## Ajustes y comandos de grbl
 Descripción de los ajustes  
